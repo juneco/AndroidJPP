@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/profielfoto"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/darker_gray"
+            android:src="@drawable/profielfoto"
+            />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/wijzig_foto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wijzig profielfoto"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/naam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Naam:"/>
+    <EditText
+        android:id="@+id/voornaam_naam"
+        android:layout_width="324dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Jos Vermeulen"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        />
+    <TextView
+        android:id="@+id/leeftijd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Leeftijd:"/>
+    <EditText
+        android:id="@+id/jaar"
+        android:layout_width="324dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="21 jaar"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        />
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E-mail:"
+        android:layout_gravity="left"
+        />
+    <EditText
+        android:id="@+id/emailadres"
+        android:layout_width="328dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="test.test@gmail.com"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        />
+    <TextView
+        android:id="@+id/woonplaats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Woonplaats:"/>
+    <EditText
+        android:id="@+id/gemeente"
+        android:layout_width="324dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Deurne"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        />
+    <Button
+        android:id="@+id/wijzigigen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gegevens opslaan"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"/>
+</LinearLayout>
