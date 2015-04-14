@@ -1,4 +1,4 @@
-package com.example.lotte.jpp.menu;
+package com.example.lotte.jpp;
 
 import android.content.Intent;
 import android.os.Bundle;
