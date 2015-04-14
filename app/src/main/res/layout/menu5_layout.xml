@@ -2,13 +2,83 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
-
-    <TextView
+    <FrameLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearance"
-        android:text="5"
-        android:id="@+id/textView"
+        android:minHeight="100dp"
+        android:minWidth="100dp"
+        android:layout_gravity="center_horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/profielfoto"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/darker_gray"
+           />
+
+        </FrameLayout>
+
+
+    <Button
+        android:id="@+id/wijzig_foto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wijzig profielfoto"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/e-mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E-mail"
+        android:layout_gravity="left"/>
+    <EditText
+        android:id="@+id/e-mailE"
+        android:layout_width="328dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
         />
 
+    <TextView
+        android:id="@+id/woonplaats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Woonplaats"/>
+    <EditText
+        android:id="@+id/woonplaatsE"
+        android:layout_width="324dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/wachtwoord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nieuw Wachtwoord"/>
+    <EditText
+        android:id="@+id/wachtwoordE"
+        android:layout_width="324dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/nieuw_wachtwoord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bevestig nieuw Wachtwoord"/>
+    <EditText
+        android:id="@+id/nieuw_wachtwoordE"
+        android:layout_width="324dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        />
+
+    <Button
+        android:id="@+id/wijzigigen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wijzigingen opslaan"
+        android:layout_gravity="center_horizontal"/>
 </LinearLayout>
