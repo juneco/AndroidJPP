@@ -18,15 +18,23 @@ import com.example.lotte.jpp.R;
 public class menu5_Fragment extends Fragment
 {
     View rootView;
+    View subView;
+    Button button;
 
     @Nullable
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle saveInstanceState)
+    public View onCreateView(final LayoutInflater inflater, final ViewGroup container, Bundle saveInstanceState)
     {
         rootView = inflater.inflate(R.layout.menu5_layout, container, false);
+        button.findViewById(R.id.wijzigingen);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                subView = inflater.inflate(R.layout.wijzigprofiel_layout,container,false);
+            }
+        });
 
         return rootView;
-
     }
 
 }
