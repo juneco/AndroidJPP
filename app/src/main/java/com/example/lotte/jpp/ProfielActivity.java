@@ -19,14 +19,15 @@ public class ProfielActivity extends FragmentActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.menu5_layout);
+        setContentView(R.layout.wijzigprofiel_layout);
 
-        btnwijzigen = (Button) findViewById(R.id.wijzigingen);
+        btnwijzigen = (Button) findViewById(R.id.opslaan);
 
         btnwijzigen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(ProfielActivity.this,"Het is gelukt", Toast.LENGTH_LONG).show();
+                //Toast.makeText(ProfielActivity.this,"Het is gelukt", Toast.LENGTH_LONG).show();
+                setContentView(R.layout.menu5_layout);
             }
         });
     }
